@@ -34,7 +34,9 @@ namespace CarLotSimulator
             car1.MakeEngineNoise();
             car1.MakeHonkNoise();
             Console.WriteLine();
+            Console.WriteLine($"Car Number:{++CarLot.NumberOfCars}");
             Console.WriteLine();
+
 
             //Custom Constructor
             Car car2 = new Car("Jeep", "Grand Cherokee", "2015", "needed work", "softer", "is currently driveable");
@@ -43,6 +45,7 @@ namespace CarLotSimulator
             car2.MakeHonkNoise();
             car2.MakeEngineNoise();
             Console.WriteLine();
+            Console.WriteLine($"Car Number:{++CarLot.NumberOfCars}");
             Console.WriteLine();
 
             //object initializer syntax
@@ -60,6 +63,9 @@ namespace CarLotSimulator
                 $"the horn sounded {car3.HonkNoise} and it was {car3.IsDriveable}.");
             Console.WriteLine($"Annoying {car3.MakeHonkNoise}");
             Console.WriteLine($"Not much {car3.MakeEngineNoise}");
+            Console.WriteLine();
+            Console.WriteLine($"Car Number:{++CarLot.NumberOfCars}");
+            Console.WriteLine();
 
 
             //*************BONUS*************//
